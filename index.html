@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laboratorio 4</title>
+    <link rel="stylesheet" href="site.css" </head>
+
+<body>
+    <script src="Laboratorio4.js"></script>
+    <div class="container">
+        <div class="data">
+            <label for="operator1"><b>First operator</b></label>
+            <input type="number" id="operator1" name="operator1" />
+
+            <label for="operator2"><b>Second operator</b></label>
+            <input type="number" id="operator2" name="operator2" />
+        </div>
+        <div class="actions">
+            <button type="button" onclick="alert(suma(document.getElementById('operator1').value,document.getElementById('operator2').value))">
+                Add
+            </button>
+            <button type="button" onclick="alert(resta(document.getElementById('operator1').value,document.getElementById('operator2').value))">
+                Subtract
+            </button>
+            <button type="button" onclick="alert(multiplicacion(document.getElementById('operator1').value,document.getElementById('operator2').value))">
+                Multiply
+            </button>
+            <button type="button" onclick="alert(division(document.getElementById('operator1').value,document.getElementById('operator2').value))">
+                Divide
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

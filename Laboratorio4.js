@@ -1,31 +1,38 @@
 function suma(suma1, suma2) {
-    if (valoresValidos(suma1, suma2)) {
-        return Number(suma1) + Number(suma2);
+    resultSuma = valoresValidos(suma1, suma2);
+    if (resultSuma == "") {
+        resultSuma = Number(suma1) + Number(suma2);
     }
+    return resultSuma;
 }
 function resta(resta1, resta2) {
-    if (valoresValidos(resta1, resta2)) {
-        return Number(resta1) - Number(resta2);
+    resultResta = valoresValidos(resta1, resta2);
+    if (resultResta == "") {
+        resultResta = Number(resta1) - Number(resta2);
     }
+    return resultResta;
 }
 function multiplicacion(multiplicacion1, multiplicacion2) {
-    if (valoresValidos(multiplicacion1, multiplicacion2)) {
-        return Number(multiplicacion1) * Number(multiplicacion2);
+    resultMultiplicacion = valoresValidos(multiplicacion1, multiplicacion2);
+    if (resultMultiplicacion == "") {
+        resultMultiplicacion = Number(multiplicacion1) * Number(multiplicacion2);
     }
+    return resultMultiplicacion;
 }
 function division(division1, division2) {
-    if (valoresValidos(division1, division2)) {
-        return Number(division1) / Number(division2);
+    resultDivision = valoresValidos(division1, division2);
+    if (resultDivision == "") {
+        resultDivision = Number(division1) / Number(division2);
     }
+    return resultDivision;
 }
 function valoresValidos(operador1, operador2) {
+    result = "";
     if (operador1 == "") {
-        alert("First operator is not set");
-        return false;
+        result += "First operator is not set. ";
     }
     if (operador2 == "") {
-        alert("Second operator is not set");
-        return false;
+        result += "Second operator is not set. ";
     }
-    return true;
+    return result;
 }

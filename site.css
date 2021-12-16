@@ -16,11 +16,6 @@ input {
     width: 50%;
 }
 
-img.avatar {
-    width: 20%;
-    border-radius: 50%;
-}
-
 .data,
 .actions {
     padding: 16px;

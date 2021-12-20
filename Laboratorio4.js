@@ -2,6 +2,7 @@ function suma(suma1, suma2) {
     resultSuma = valoresValidos(suma1, suma2);
     if (resultSuma == "") {
         resultSuma = Number(suma1) + Number(suma2);
+        resultSuma = 'Result: ' + resultSuma;
     }
     return resultSuma;
 }
@@ -9,6 +10,7 @@ function resta(resta1, resta2) {
     resultResta = valoresValidos(resta1, resta2);
     if (resultResta == "") {
         resultResta = Number(resta1) - Number(resta2);
+        resultResta = 'Result: ' + resultResta;
     }
     return resultResta;
 }
@@ -16,6 +18,7 @@ function multiplicacion(multiplicacion1, multiplicacion2) {
     resultMultiplicacion = valoresValidos(multiplicacion1, multiplicacion2);
     if (resultMultiplicacion == "") {
         resultMultiplicacion = Number(multiplicacion1) * Number(multiplicacion2);
+        resultMultiplicacion = 'Result: ' + resultMultiplicacion;
     }
     return resultMultiplicacion;
 }
@@ -23,6 +26,7 @@ function division(division1, division2) {
     resultDivision = valoresValidos(division1, division2);
     if (resultDivision == "") {
         resultDivision = Number(division1) / Number(division2);
+        resultDivision = 'Result: ' + resultDivision;
     }
     return resultDivision;
 }
